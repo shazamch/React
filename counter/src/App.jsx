@@ -5,14 +5,13 @@ import './App.css'
 
 function App() {
   
-  let [counter, setCounter] = useState(15)
+  let [counter, setCounter] = useState(5)
 
-  //let counter = 15
   const addValue = () => {
-    if (counter < 20) {
+    if (counter < 10) {
       setCounter(counter + 1)
     } else {
-      setCounter(counter = 20)
+      setCounter(counter = 10)
     }
   }
 
@@ -26,7 +25,7 @@ function App() {
   }
   return (
     <>
-      <h1>React</h1>
+      <h1>Counter </h1>
       <h2>Counter value: {counter}</h2>
 
       <button
