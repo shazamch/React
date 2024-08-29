@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 
-function SideBar(props) {
+function SideBar() {
   const [collapsed, setCollapsed] = useState(false);
 
   const toggleSidebar = () => setCollapsed(!collapsed);
 
   return (
-    <aside className={`flex h-screen ${collapsed ? 'w-20' : 'w-64'} flex-col overflow-y-auto border-r bg-white px-5 py-8 transition-width duration-300`}>
+    <aside className={`flex h-screen ${collapsed ? 'w-24' : 'w-64'} flex-col border-r bg-white px-5 py-8 transition-width duration-300`}>
       <div className="flex items-center justify-between mb-6">
         <a href="#" className="flex items-center">
           {collapsed ? (
@@ -201,7 +201,7 @@ function SideBar(props) {
         </button>
       </div>
     </div> }
-    {!collapsed &&
+    {/* {!collapsed &&
     <div class="mt-6 flex flex-col items-center text-xs text-gray-600 space-y-2">
       <div>
         Yana Medical Admin Dashboard
@@ -212,7 +212,7 @@ function SideBar(props) {
       <div>
         Made by Yana Dev Team
       </div>
-    </div>}
+    </div>} */}
     </div>
   </div>
 </aside>
