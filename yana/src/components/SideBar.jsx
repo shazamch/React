@@ -22,7 +22,7 @@ function SideBar() {
         </a>
         <button
           onClick={toggleSidebar}
-          className="p-1 rounded-xl bg-white hover:bg-blue-200 "
+          className="p-1 rounded-xl bg-white hover:bg-blue-100 focus:outline-none"
         >
           {collapsed ? (
             <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">

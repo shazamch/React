@@ -2,7 +2,7 @@ import React from "react";
 
 function Table() {
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 py-4">
+    <section className="mx-auto w-full max-w-7xl">
       <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0"></div>
       <div className="mt-6 flex flex-col over">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -16,7 +16,7 @@ function Table() {
                       scope="col"
                       className="px-4 py-3.5 text-left text-sm font-normal text-gray-500"
                     >
-                      <span>Custoemrs</span>
+                      <span>Name</span>
                     </th>
                     <th
                       scope="col"
@@ -73,7 +73,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Developer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-sm font-medium text-center">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -111,7 +111,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       CTO
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -149,7 +149,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -187,7 +187,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Manager
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -224,7 +224,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -261,7 +261,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -298,7 +298,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -335,7 +335,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -372,7 +372,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -409,7 +409,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
@@ -446,7 +446,7 @@ function Table() {
                     <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
                       Designer
                     </td>
-                    <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
+                    <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
                       <a href="#" className="text-gray-500 hover:text-indigo-600">
                         Edit
                       </a>
