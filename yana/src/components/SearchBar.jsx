@@ -1,14 +1,19 @@
-// src/components/SearchBar.jsx
+import React, { useState } from "react";
 
 function SearchBar() {
+  const [Search, setSearch] = useState("");
   return (
-    <div className="mb-4 relative w-full">
+    <div className="relative w-full">
       <input
         type="text"
         placeholder="Search..."
         className="w-full p-2 pl-10 border rounded-lg focus:outline-none"
+        value={Search}
+        onChange={(e) => setSearch(e.target.value)}
       />
-      <button className=" bg-white absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-600 hover:bg-blue-100 focus:outline-none">
+      <button
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-600 bg-white hover:bg-blue-100 focus:outline-none"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"

@@ -11,7 +11,11 @@ function SideBar() {
       <div className="flex items-center justify-between mb-6">
         <a href="#" className="flex items-center">
           {collapsed ? (
-            <span className="text-sm font-bold text-blue-700">YANA</span>
+            <img
+            src="./src/assets/SideBar SVGs/Collapsed Main Logo.png"
+            className="w-25 h-15"
+            alt="Main Logo"
+          />
           ) : (
             <img
               src="./src/assets/Main Logo.png"
@@ -26,21 +30,21 @@ function SideBar() {
         >
           {collapsed ? (
             <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.04134 4.16675L10.833 10.0001L7.04134 15.8334M2.70801 4.16675L6.49967 10.0001L2.70801 15.8334" stroke="#D61125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.04134 4.16675L10.833 10.0001L7.04134 15.8334M2.70801 4.16675L6.49967 10.0001L2.70801 15.8334" stroke="#D61125" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             
           ) : (
             <svg width="15" height="27" viewBox="0 0 21 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 29.2916L3.5 18.4999L9.625 7.70825M16.625 29.2916L10.5 18.4999L16.625 7.70825" stroke="#D61125" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.625 29.2916L3.5 18.4999L9.625 7.70825M16.625 29.2916L10.5 18.4999L16.625 7.70825" stroke="#D61125" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
 
           )}
         </button>
 
       </div>
-  <div class="mt-6 flex flex-1 flex-col justify-between">
-    <nav class="-mx-3 space-y-6 ">
-      <div class="space-y-3 ">
+  <div className="mt-6 flex flex-1 flex-col justify-between">
+    <nav className="-mx-3 space-y-6 ">
+      <div className="space-y-3 ">
         <a
           className={`flex items-center rounded-lg px-3 py-2 text-gray-600 transition-colors duration-300 hover:bg-gray-100 hover:text-gray-700 ${collapsed ? 'justify-center' : ''}`}
           href="#"
@@ -181,26 +185,60 @@ function SideBar() {
         </a>
       </div>
     </nav>
-    <div class="mt-6">
+    <div className="mt-6">
 
-    {!collapsed &&
-    <div class="relative rounded-lg bg-red-500 p-3 flex flex-col">
-      <div class="flex items-center space-x-4 mb-10">
-        <p class="text-xs text-white flex-1">
-          Please, organize your menus through the button below!
-        </p>
-        <img
-          class="h-20 w-20 rounded-lg object-cover"
-          src="./src/assets/chef.png"
-          alt="Feature"
-        />
-      </div>
-      <div class="absolute bottom-2 left-2">
-        <button class="bg-white text-red-500 px-2 py-1 rounded-md">
-          + Add Menus
-        </button>
-      </div>
-    </div> }
+    {collapsed ? (
+        <svg
+        width="65"
+        height="70"
+        viewBox="0 0 65 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        >
+        <g filter="url(#filter0_d_1026_2227)">
+        <rect x="17" y="5" width="30" height="30" rx="10" fill="#D61125"/>
+        </g>
+        <path d="M32.3945 17.5V20M32.3945 20V22.5M32.3945 20H34.8945M32.3945 20H29.8945M39.8945 20C39.8945 24.1421 36.5367 27.5 32.3945 27.5C28.2524 27.5 24.8945 24.1421 24.8945 20C24.8945 15.8579 28.2524 12.5 32.3945 12.5C36.5367 12.5 39.8945 15.8579 39.8945 20Z" stroke="#F2F5F3" stroke-width="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <defs>
+        <filter id="filter0_d_1026_2227" x="-3" y="0" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="15"/>
+        <feGaussianBlur stdDeviation="10"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.275709 0 0 0 0 0.0242025 0 0 0 0 0.316652 0 0 0 0.12 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1026_2227"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1026_2227" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+        
+      ) : (
+        <div className="relative rounded-lg bg-red-500 p-3 flex flex-col">
+          <div className="flex items-center space-x-4 mb-10">
+            <p className="text-xs text-white flex-1">
+              Please, organize your menus through the button below!
+            </p>
+            <img
+              className="
+                object-cover rounded-lg
+                h-10 w-10  // Base size for smaller screens
+                sm:h-10 sm:w-10  // Size for screens ≥640px (sm)
+                md:h-15 md:w-15  // Size for screens ≥768px (md)
+                lg:h-20 lg:w-20  // Size for screens ≥1024px (lg)
+                xl:h-24 xl:w-24  // Size for screens ≥1280px (xl)
+              "
+              src="./src/assets/chef.png"
+              alt="Feature"
+            />
+          </div>
+          <div className="absolute bottom-2 left-2">
+            <button className="bg-white text-red-500 px-2 py-1 rounded-md">
+              + Add Menus
+            </button>
+          </div>
+        </div>
+      )}
+
     {/* {!collapsed &&
     <div class="mt-6 flex flex-col items-center text-xs text-gray-600 space-y-2">
       <div>
