@@ -37,7 +37,7 @@ function Table() {
 
     fetchData();
   }, []);
-
+  
   useEffect(() => {
     const results = customers
       .filter(customer => 
@@ -127,7 +127,7 @@ function Table() {
                         </td>
                         <td className="whitespace-nowrap px-12 py-4">
                           <div className="text-sm font-medium text-gray-800 font-poppins">
-                            {customer.MedicaidID}
+                            {customer.MemberID}
                           </div>
                         </td>
                         <td className="whitespace-nowrap px-4 py-4 text-sm font-medium text-gray-800 font-poppins">
